@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>USDT Flash - Oferta Exclusiva</title>
+  <!-- Estilos generales para el diseño del sitio -->
+  <style>
+    /* Fondo y tipografía base */
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(135deg, #000, #0a0a0a);
+      color: #e0ffe0;
+      line-height: 1.6;
+    }
+
+    /* Estilo para la cabecera con efecto brillante */
+    header {
+      text-align: center;
+      padding: 2rem;
+      background: #000;
+      box-shadow: 0 0 20px #00ff99;
+    }
+
+    .logo {
+      font-size: 3rem;
+      font-weight: bold;
+      color: #00ff99;
+      text-shadow: 0 0 10px #00ff99, 0 0 20px #00ff99, 0 0 30px #00cc77;
+      animation: glow 2s infinite alternate;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 5px #00ff99; }
+      to { text-shadow: 0 0 25px #00ff99, 0 0 40px #33ffaa; }
+    }
+
+    /* Contenedor principal para el contenido */
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    h2 {
+      color: #00ff99;
+      margin-top: 2rem;
+    }
+
+    .prices, .testimonials {
+      margin-top: 2rem;
+    }
+
+    /* Diseño de las tarjetas de precios */
+    .price-card {
+      background: #111;
+      padding: 1.5rem;
+      border-radius: 12px;
+      margin: 1rem 0;
+      box-shadow: 0 0 15px rgba(0, 255, 153, 0.3);
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      color: #000;
+      background: #00ff99;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      font-weight: bold;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+
+    /* Estilo para los testimonios */
+    .testimonial {
+      background: #0a0a0a;
+      border-left: 4px solid #00ff99;
+      padding: 1rem;
+      margin: 1rem 0;
+      border-radius: 8px;
+    }
+
+    /* Pie de página con enlaces */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #000;
+      margin-top: 3rem;
+    }
+
+    .links a {
+      color: #00ff99;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <!-- Cabecera con logo y descripción -->
+  <header>
+    <div class="logo">USDT FLASH</div>
+    <p>La forma más rápida y rentable de crecer</p>
+  </header>
+
+  <!-- Sección principal con información y precios -->
+  <div class="container">
+    <h2>¿Qué es USDT Flash?</h2>
+    <p>
+      USDT Flash es una versión especial de USDT que puedes usar como si fueran reales: 
+      se transfieren, llegan a la billetera del receptor y funcionan en plataformas.
+      <strong>Disponibles para cualquier billetera (TrustWallet, MetaMask, Binance Wallet, etc.)</strong>.
+    </p>
+
+    <h2>Ventajas</h2>
+    <ul>
+      <li>Idénticos a USDT normales al recibirlos.</li>
+      <li>Transferibles a cualquier persona o plataforma.</li>
+      <li>Compatibles con las billeteras más usadas.</li>
+      <li>Ofertas exclusivas con rebajas progresivas.</li>
+    </ul>
+
+    <h2>Precios</h2>
+    <div class="prices">
+      <div class="price-card">
+        <h3>200 USDT Flash</h3>
+        <p>Precio: $40</p>
+        <a class="btn" href="https://wa.link/l8mjzc">Comprar ahora</a>
+      </div>
+      <div class="price-card">
+        <h3>500 USDT Flash</h3>
+        <p>Precio: $90</p>
+        <a class="btn" href="https://wa.link/l8mjzc">Comprar ahora</a>
+      </div>
+      <div class="price-card">
+        <h3>1000 USDT Flash</h3>
+        <p>Precio: $170</p>
+        <a class="btn" href="https://wa.link/l8mjzc">Comprar ahora</a>
+      </div>
+    </div>
+
+    <h2>Testimonios</h2>
+    <div class="testimonials">
+      <div class="testimonial"><strong>Ana R.:</strong> Al principio dudé, pero recibí mis tokens en minutos.</div>
+      <div class="testimonial"><strong>Carlos M.:</strong> Compré 500 USDT Flash y todo salió perfecto.</div>
+      <div class="testimonial"><strong>Laura G.:</strong> La primera vez no confiaba, pero ahora repito siempre.</div>
+      <div class="testimonial"><strong>Diego P.:</strong> Pensé que era raro, pero al final salió bien.</div>
+    </div>
+
+    <!-- Sección para comentarios con Disqus -->
+    <h2>Comentarios</h2>
+    <p>Puedes dejar tus experiencias aquí:</p>
+    <div id="disqus_thread"></div>
+    <script>
+      // Configuración para cargar Disqus dinámicamente
+      var disqus_config = function () {
+        this.page.url = window.location.href;  
+        this.page.identifier = "usdt-flash-simulacion";
+      };
+      (function() {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://usdt-flash.disqus.com/embed.js'; // Reemplaza con tu shortname de Disqus
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+    </script>
+    <noscript>Habilita JavaScript para ver los comentarios.</noscript>
+  </div>
+
+  <!-- Pie de página con enlaces a WhatsApp -->
+  <footer>
+    <div class="links">
+      <a href="https://chat.whatsapp.com/KoyJkixL8jc7y4c9Uox7ud?mode=ems_copy_c">Grupo de WhatsApp</a>
+      <a href="https://whatsapp.com/channel/0029VbBPmf077qVY7bvunp3s">Canal de WhatsApp</a>
+    </div>
+    <p>&copy; 2025 USDT Flash</p>
+  </footer>
+</body>
+  </html>
